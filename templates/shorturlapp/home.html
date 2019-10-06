@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block page %}
+    <div class="card-body">
+     <form method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit">Сгенирировать</button>
+    </form>
+    <a href="http://127.0.0.1:8000/urlshort/{{ a }}">http://127.0.0.1:8000/urlshort/{{ a }}</a>
+    </div>
+{% endblock %}
