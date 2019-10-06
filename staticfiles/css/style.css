@@ -1,0 +1,42 @@
+/* Обнуление */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-decoration: none;
+	line-height: 1;
+	font-family: 'Philosopher', sans-serif;
+}
+li{
+	list-style: none;
+}
+/*Форма*/
+.forma{
+	display: grid;
+	grid-template-rows: 100px 100px 100px 100px;
+	grid-template-areas:
+	"t_url"
+	"text_input"
+	"generate"
+	"g_url";
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+	background: #1b3abc;
+}
+.forma h1{
+	grid-area: t_url;
+	-ms-align-self: center;
+	align-self: center;
+}
+.text_input{
+	grid-area: text_input;
+	text-align: center;
+}
+.generate{
+	grid-area: generate;
+	display: inline-block;
+}
+.forma p{
+	grid-area: g_url;
+}
